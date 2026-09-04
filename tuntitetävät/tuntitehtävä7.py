@@ -6,15 +6,15 @@ num2 = float(input ("Anna numero 2: "))
 while valinta != "stop":
   
   if valinta == "+":
-    summa = num1 + num2
-    print("Tulos on : ", summa )
-  elif valinta == "-":
-    minus = num1 - num2
-    print("Tulos on : ", minus )
-  elif valinta == "x":
-    kertaa = num1 * num2
-    print("Tulos on : ", kertaa )
+    tulos = num1 + num2
     
+  elif valinta == "-":
+    tulos = num1 - num2
+    
+  elif valinta == "x":
+    tulos = num1 * num2
+    
+  print("Tulos on : ", tulos )  
   valinta = input (" Valitse +, -, x, stop: ")
   if valinta == "stop":
     break
