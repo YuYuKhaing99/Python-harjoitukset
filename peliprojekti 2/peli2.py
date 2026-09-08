@@ -16,7 +16,7 @@ def print_menu():
     print("2- saldo")
     print("3- päivittäiset palkinnot")
     print("4- miten pelata")
-    print("5- uloskäynti \n")
+    print("5- poistu \n")
 print_menu()
 
 while True:
@@ -66,6 +66,6 @@ while True:
        print("Virheellinen komento, valitse uudelleen!")
 
     print_menu()
-print("Kiitos pelamisesta!")
+print("Kiitos pelaamisesta!")
 print("Kokonaissaldo: ", rahaa)
 
