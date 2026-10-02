@@ -1,4 +1,4 @@
-Vegetable Farm 🌱
+Vegetable Farm (Growing seeds)
 A simple Python farming game where you buy seeds, plant vegetables, water them, harvest them, and sell them to earn money.
 Features
 Buy carrot, tomato, and potato seeds
@@ -17,14 +17,6 @@ Python 3
 A terminal or Python IDE such as VS Code, PyCharm, or IDLE
 No external Python packages are required.
 Project Structure
-vegetable_farm/
-│
-├── main.py
-├── player.py
-├── room.py
-├── item.py
-├── README.md
-└── save.txt
 
 How to Run
 Open a terminal in the project folder and run:
@@ -40,30 +32,30 @@ You start with €20.
 Your goal is to reach €50.
 
 Main Menu
-1. Buy seed
-2. Plant
-3. Water
-4. Check growth
-5. Harvest
-6. Sell
-7. Inventory
-8. Balance
-9. Save
-10. Exit
+1.Buy seed
+2.Plant
+3.Water
+4.Check growth
+5.Harvest
+6.Sell
+7.Inventory
+8.Balance
+9.Save
+10.Exit
 
-1. Buy Seed
+1.Buy Seed
 Choose a seed from the shop:
-Seed	Price
-Carrot	€3
-Tomato	€5
-Potato	€4
+Seed    Price
+Carrot  €3
+Tomato  €5
+Potato  €4
 
 The seed is added to your inventory and the price is removed from your balance.
-2. Plant
+2.Plant
 Choose one of the seeds in your inventory.
 Only one vegetable can grow in the garden at a time.
 
-3. Water
+3.Water
 Watering increases the vegetable's growth by 25%.
 For example:
 
@@ -73,39 +65,39 @@ After four successful waterings:
 Growth: 100%
 
 The vegetable is then ready to harvest.
-4. Check Growth
+4.Check Growth
 Shows the current growth of the vegetable.
 Example:
 
 Carrot growth: 50%
 Keep watering.
 
-5. Harvest
+5.Harvest
 A vegetable can only be harvested when it reaches 100% growth.
 After harvesting, the vegetable is placed in your inventory.
 
-6. Sell
+6.Sell
 Sell your harvested vegetables to receive money.
 The selling price is twice the original seed price:
 
-Vegetable	Selling Price
-Carrot	€6
-Tomato	€10
-Potato	€8
+Vegetable   Selling Price
+Carrot  €6
+Tomato  €10
+Potato  €8
 
-7. Inventory
+7.Inventory
 Displays all seeds and vegetables currently in your inventory.
-8. Balance
+8.Balance
 Displays your current amount of money.
 Example:
 
 Balance: €32
 
-9. Save
+9.Save
 Saves basic game information to:
 save.txt
 
-10. Exit
+10.Exit
 Closes the game.
 Winning
 You win when your balance reaches €50 or more.
@@ -114,92 +106,3 @@ The game displays:
 you won!
 You reached €50!
 
-Example Gameplay
-Welcome to Vegetable Farm!
-
-Name: Alex
-Age: 18
-
-You start with €20.
-Goal: reach €50.
-
-=== VEGETABLE FARM ===
-1. Buy seed
-2. Plant
-3. Water
-4. Check growth
-5. Harvest
-6. Sell
-7. Inventory
-8. Balance
-9. Save
-10. Exit
-
-Choose: 1
-
-1. Carrot - €3
-2. Tomato - €5
-3. Potato - €4
-
-Choose seed: 1
-
-Bought Carrot seed
-
-Then:
-Choose: 2
-
-Your seeds:
-1 Carrot seed
-
-Choose seed: 1
-
-You planted Carrot
-
-Water it four times:
-Choose: 3
-
-WATER FUNCTION RUNNING
-Growth: 25%
-
-Eventually:
-Growth: 100%
-
-Then harvest and sell it to increase your balance.
-Files
-main.py
-Contains the main game loop and game functions.
-player.py
-Contains the Player class, including:
-Name
-Age
-Balance
-Inventory
-Location
-item.py
-Contains the Item class used for seeds and vegetables.
-room.py
-Contains the Room class used for the garden, shop, and market.
-Troubleshooting
-"Invalid choice" appears
-Make sure you are running the correct main.py file.
-Run:
-
-python main.py
-
-When choosing an option, enter only the number:
-Choose: 3
-
-Do not enter:
-Choose: option 3
-
-Python cannot find player, room, or item
-Make sure all four Python files are in the same folder:
-main.py
-player.py
-room.py
-item.py
-
-Starting the game
-The easiest way is to open the project folder in your IDE and run main.py.
-Author
-Vegetable Farm — Python beginner game project.
