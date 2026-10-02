@@ -1,0 +1,9 @@
+import os
+while True:
+    tiedostonimi = input("Anna nimi: ")
+    try:
+        os.remove(tiedostonimi)
+        break
+
+    except FileNotFoundError:
+       print("File not found")

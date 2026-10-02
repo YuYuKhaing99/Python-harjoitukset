@@ -1,0 +1,6 @@
+with open("ostoslista.txt", "r") as tiedosto:
+  #tiedosto.write("leipä\n kanamuna\n vesi\n")
+  data = tiedosto.readlines()
+  for i in data:
+    print(i)
+  print ("Tuotteita listalla: ", len(data))

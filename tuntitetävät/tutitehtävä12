@@ -1,0 +1,14 @@
+import json
+
+movie = { 
+          "name": "ABC",
+          "year": "2000",
+          "actors": ["James Bone", "Taylor"]}
+
+with open("save.json", "w") as tiedosto:
+    json.dump(movie, tiedosto)
+with open("save.json", "r") as tiedosto:
+    data_luettu = json.load(tiedosto)
+
+print("Movie name:" ,data_luettu ['name']," Year:", data_luettu ['year']," Actors: ", data_luettu ['actors'],)
+

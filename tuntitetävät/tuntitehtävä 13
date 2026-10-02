@@ -1,0 +1,10 @@
+while True:
+    tiedostonimi = input("Anna nimi: ")
+    try:
+        with open(tiedostonimi, "r") as tiedosto:
+         data = tiedosto.read()
+         print(data)
+         break
+
+    except FileNotFoundError:
+       print("File not founnd")
