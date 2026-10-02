@@ -70,7 +70,8 @@ def plant(player, garden):
     try:
         number = int(choice)
     except ValueError:
-        print("Invalid choice.")
+        choice = input("Choose: ").strip()
+
         return
 
     if number < 1 or number > len(seeds):
@@ -91,18 +92,18 @@ def plant(player, garden):
 
 
 def water(garden):
-    print("WATER FUNCTION RUNNING")
-
-    if garden.vegetable is None:
+     if garden.vegetable is None:
         print("Nothing to water.")
         return
 
-    garden.vegetable.growth += 25
+     garden.vegetable.growth += 25
 
-    if garden.vegetable.growth > 100:
+     if garden.vegetable.growth > 100:
         garden.vegetable.growth = 100
 
-    print("Growth:", garden.vegetable.growth, "%")
+     print("You watered the", garden.vegetable.name)
+     print("Growth:", garden.vegetable.growth, "%")
+
 
 
 def check_growth(garden):
@@ -210,34 +211,32 @@ def main():
 
         menu()
 
-        choice = input("Choose: ")
-
-        print("DEBUG - You entered:", repr(choice))
+        choice = input("Choose: ").strip()
 
         if choice == "1":
-            print("BUY SELECTED")
-            player.location = shop
-            buy(player)
+          print("BUY SELECTED")
+          player.location = shop
+          buy(player)
 
         elif choice == "2":
-            print("PLANT SELECTED")
-            player.location = garden
-            plant(player, garden)
+         print("PLANT SELECTED")
+         player.location = garden
+         plant(player, garden)
 
         elif choice == "3":
-            print("WATER SELECTED")
-            player.location = garden
-            water(garden)
+         print("WATER SELECTED")
+         player.location = garden
+         water(garden)
 
         elif choice == "4":
-            print("GROWTH SELECTED")
-            player.location = garden
-            check_growth(garden)
+          print("GROWTH SELECTED")
+          player.location = garden
+          check_growth(garden)
 
         elif choice == "5":
-            print("HARVEST SELECTED")
-            player.location = garden
-            harvest(player, garden)
+         print("HARVEST SELECTED")
+         player.location = garden
+         harvest(player, garden)
 
         elif choice == "6":
             print("SELL SELECTED")
@@ -264,10 +263,10 @@ def main():
             print("INVALID CHOICE!")
 
         if player.balance >= 50:
-            print()
-            print("YOU WON!")
-            print("You reached €50!")
-            break
+                    print()
+                    print("YOU WON!")
+                    print("You reached €50!")
+                    break
 
 
 if __name__ == "__main__":
