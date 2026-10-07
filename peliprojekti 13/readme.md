@@ -27,6 +27,8 @@ You start with €20.
 
 Your goal is to reach €50.
 
+first intro.txt and instructions.txt will display first
+
 Main Menu
 1.Buy seed
 2.Plant
@@ -91,13 +93,19 @@ Balance: €32
 
 9.Save
 Saves basic game information to:
-save.txt
+save1.json
 
 10.Exit
 Closes the game.
 Winning
 You win when your balance reaches €50 or more.
 The game displays:
+
+If you have save game, in the next game will ask you resume the previous game or not.
+
+if yes, you previous game reloaded and continue.
+
+if no, start new game.
 
 you won!
 You reached €50!
