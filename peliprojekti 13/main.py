@@ -201,11 +201,11 @@ def load_game():
 
 def main():
 
-    read_file("intro.txt")
+    read_file("./peliprojekti 13/intro.txt")
     print("")
     print(".....Instructions.....")
     print("")
-    read_file("instructions.txt")
+    read_file("./peliprojekti 13/instructions.txt")
     print("")
     save_game = load_game()
 
