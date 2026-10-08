@@ -101,7 +101,7 @@ Winning
 You win when your balance reaches €50 or more.
 The game displays:
 
-If you have save game, in the next game will ask you resume the previous game or not.
+If you have save game, in the next game will ask your name and ask you resume the previous game or not.
 
 if yes, you previous game reloaded and continue.
 

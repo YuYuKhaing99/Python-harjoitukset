@@ -209,7 +209,8 @@ def main():
     print("")
     save_game = load_game()
 
-    if save_game:
+    name = input("Name: ").lower()
+    if save_game and name == save_game[0]:
         
         choice = input("Do you want to continue the previous game? (yes/no): ").strip().lower()
 
