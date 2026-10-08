@@ -173,7 +173,7 @@ def save(player, garden):
         "name1": player.name,
         "age1": player.age,
         "balance1": player.balance,  
-        "vegetable1": garden.vegetable.name if garden.vegetable.name is not None else None,
+        "vegetable1": garden.vegetable.name if garden.vegetable is not None else None,
         "growth1": garden.vegetable.growth if garden.vegetable is not None else 0,
         "inventory1": [item.name for item in player.inventory]   
         
@@ -202,11 +202,11 @@ def load_game():
 def main():
 
     read_file("./peliprojekti 13/intro.txt")
-    print("")
+    print()
     print(".....Instructions.....")
-    print("")
+    print()
     read_file("./peliprojekti 13/instructions.txt")
-    print("")
+    print()
     save_game = load_game()
 
     name = input("Name: ").lower()
