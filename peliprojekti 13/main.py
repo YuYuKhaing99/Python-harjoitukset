@@ -246,7 +246,8 @@ def main():
         try:
             age = int(input("Age: "))
         except ValueError:
-            age = 18
+            age = int(input("Invalid value. Enter valid number-Age: "))
+           
 
         player = Player(name, age)
 
@@ -325,5 +326,4 @@ def main():
                     break
 
 
-if __name__ == "__main__":
-    main()
+main()
