@@ -11,15 +11,6 @@ View your inventory
 Check your balance
 Save the game
 Win when your balance reaches €50
-Requirements
-You need:
-
-How to Run
-Open a terminal in the project folder and run:
-python main.py
-
-On some systems, you may need:
-python3 main.py
 
 How to Play
 When the game starts, enter your name and age.
@@ -79,9 +70,9 @@ Sell your harvested vegetables to receive money.
 The selling price is twice the original seed price:
 
 Vegetable   Selling Price
-Carrot  €6
-Tomato  €10
-Potato  €8
+Carrot  €3
+Tomato  €5
+Potato  €4
 
 7.Inventory
 Displays all seeds and vegetables currently in your inventory.
@@ -101,7 +92,7 @@ Winning
 You win when your balance reaches €50 or more.
 The game displays:
 
-If you have save game, in the next game will ask your name and ask you resume the previous game or not.
+If you have saved game, in the next game will ask your name and ask you resume the previous game or not.
 
 if yes, you previous game reloaded and continue.
 
