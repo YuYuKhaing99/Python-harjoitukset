@@ -1,103 +1,111 @@
-Vegetable Farm (Growing seeds)
-A simple Python farming game where you buy seeds, plant vegetables, water them, harvest them, and sell them to earn money.
-Features
-Buy carrot, tomato, and potato seeds
-Plant seeds in your garden
-Water vegetables to increase their growth
-Check vegetable growth
-Harvest fully grown vegetables
-Sell harvested vegetables
-View your inventory
-Check your balance
-Save the game
-Win when your balance reaches €50
+Vihannestila (siementen kasvatus)
+Yksinkertainen peli, jossa ostat siemeniä, istutat vihanneksia, kastelet niitä, korjaat sadon ja myyt niitä ansaitaksesi rahaa.
 
-How to Play
-When the game starts, enter your name and age.
-You start with €20.
+Ominaisuudet
+Osta porkkanan, tomaatin ja perunan siemeniä
+Istuta siemeniä puutarhaasi
+Kastele vihanneksia niiden kasvun lisäämiseksi
+Tarkista vihannesten kasvu
+Korjaa täysikasvuiset vihannekset
+Myy korjatut vihannekset
+Katsele varastoasi
+Tarkista saldosi
+Tallenna peli
+Voita, kun saldosi saavuttaa 50 €
 
-Your goal is to reach €50.
+Pelaaminen
+Kun peli alkaa, syötä nimesi ja ikäsi.
+Aloitat 20 €:lla.
 
-first intro.txt and instructions.txt will display first
+Tavoitteesi on saavuttaa 50 €.
 
-Main Menu
-1.Buy seed
-2.Plant
-3.Water
-4.Check growth
-5.Harvest
-6.Sell
-7.Inventory
-8.Balance
-9.Save
-10.Exit
+ensin näytetään tiedostot intro.txt ja instructions.txt.
 
-1.Buy Seed
-Choose a seed from the shop:
-Seed    Price
-Carrot  €3
-Tomato  €5
-Potato  €4
+Päävalikko
+1.Osta siemeniä
+2.Istuta
+3.Kastele
+4.Tarkista kasvu
+5.Korjaa sato
+6.Myy
+7.Varasto
+8.Saldo
+9.Säästä
+10.Poistu
 
-The seed is added to your inventory and the price is removed from your balance.
-2.Plant
-Choose one of the seeds in your inventory.
-Only one vegetable can grow in the garden at a time.
+1.Osta siemeniä
+Valitse siemen kaupasta:
+Siemenen hinta
+Porkkana 3 €
+Tomaatti 5 €
+Peruna 4 €
 
-3.Water
-Watering increases the vegetable's growth by 25%.
-For example:
+Siemen lisätään varastoosi ja hinta poistetaan saldostasi.
 
-Growth: 25%
+2.Istuta
+Valitse yksi varastosi siemenistä.
 
-After four successful waterings:
-Growth: 100%
+Puutarhassa voi kasvaa vain yksi vihannes kerrallaan.
 
-The vegetable is then ready to harvest.
-4.Check Growth
-Shows the current growth of the vegetable.
-Example:
+3.Kastele
+Kastelu lisää vihanneksen kasvua 25 %.
+Esimerkiksi:
 
-Carrot growth: 50%
-Keep watering.
+Kasvu: 25 %
 
-5.Harvest
-A vegetable can only be harvested when it reaches 100% growth.
-After harvesting, the vegetable is placed in your inventory.
+Neljän onnistuneen kastelun jälkeen:
+Kasvu: 100 %
 
-6.Sell
-Sell your harvested vegetables to receive money.
-The selling price is twice the original seed price:
+Vihannes on sitten valmis korjattavaksi.
 
-Vegetable   Selling Price
-Carrot  €3
-Tomato  €5
-Potato  €4
+4.Tarkista kasvu
+Näyttää vihanneksen nykyisen kasvun.
+Esimerkki:
 
-7.Inventory
-Displays all seeds and vegetables currently in your inventory.
-8.Balance
-Displays your current amount of money.
-Example:
+Porkkanan kasvu: 50 %
+Jatka kastelua.
 
-Balance: €32
+5.Sadonkorjuu
+Vihannes voidaan korjata vasta, kun se saavuttaa 100 %:n kasvun.
 
-9.Save
-Saves basic game information to:
+Sadonkorjuun jälkeen vihannes lisätään varastoosi.
+
+6.Myy
+Myy korjatut vihanneksesi saadaksesi rahaa.
+
+Myyntihinta on kaksinkertainen alkuperäiseen siemenhintaan verrattuna:
+
+Vihanneksen myyntihinta
+Porkkana 3 €
+Tomaatti 5 €
+Peruna 4 €
+
+7.Varasto
+Näyttää kaikki varastossasi tällä hetkellä olevat siemenet ja vihannekset.
+
+8.Saldo
+Näyttää nykyisen rahasummasi.
+
+Esimerkki:
+
+Saldo: 32 €
+
+9.Tallenna
+Tallentaa pelin perustiedot tiedostoon:
 save1.json
 
-10.Exit
-Closes the game.
-Winning
-You win when your balance reaches €50 or more.
-The game displays:
+10.Poistu
+Sulkee pelin.
+Voitto
+Voitat, kun saldosi saavuttaa 50 € tai enemmän.
 
-If you have saved game, in the next game will ask your name and ask you resume the previous game or not.
+Peli näyttää:
 
-if yes, you previous game reloaded and continue.
+Jos olet tallentanut pelin, seuraavassa pelissä kysytään nimeäsi ja kysytään, jatkatko edellistä peliä vai et.
 
-if no, start new game.
+Jos kyllä, edellinen pelisi latautui uudelleen ja voit jatkaa.
 
-you won!
-You reached €50!
+Jos ei, aloita uusi peli.
 
+Voitit!
+Saavutit 50 €!
